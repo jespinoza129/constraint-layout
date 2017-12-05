@@ -8,12 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="279dp"
+        android:layout_width="0dp"
         android:layout_height="118dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:contentDescription="@string/placeholder"
         android:scaleType="centerCrop"
         android:src="@drawable/singapore"
@@ -23,8 +21,12 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.502"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp" />
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
 
     <Button
         android:id="@+id/upload"
@@ -35,7 +37,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:text="Upload"
         android:layout_marginRight="16dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp" />
 
     <Button
         android:id="@+id/discard"
@@ -48,7 +51,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/upload"
         tools:text="Discard"
-        app:layout_constraintBaseline_toBaselineOf="@+id/upload" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/upload"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/cameraLabel"
@@ -57,7 +62,8 @@
         android:text="@string/camera"
         app:layout_constraintBaseline_toBaselineOf="@+id/cameraType"
         android:layout_marginLeft="29dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="29dp" />
 
     <EditText
         android:id="@+id/cameraType"
@@ -72,6 +78,8 @@
         android:layout_marginTop="89dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.352" />
+        app:layout_constraintHorizontal_bias="0.352"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="8dp" />
 
 </android.support.constraint.ConstraintLayout>
